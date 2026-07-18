@@ -1,0 +1,25 @@
+</main>
+<footer class="article-footer">
+  <span>115 年中小企業基礎資安培訓課程｜第二期 Day2</span>
+  <a href="index.html">返回 Day2 課程目錄 →</a>
+</footer>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="資訊圖放大檢視">
+  <span class="lightbox-hint">點擊或按 Esc 關閉</span>
+  <img src="" alt="">
+</div>
+<script>
+(function(){
+  var lightbox=document.getElementById("lightbox");
+  var lightboxImg=lightbox.querySelector("img");
+  function closeLightbox(){lightbox.classList.remove("is-open");lightboxImg.src="";}
+  document.querySelectorAll("figure.infographic img").forEach(function(img){
+    img.addEventListener("click",function(){
+      lightboxImg.src=img.currentSrc||img.src;
+      lightboxImg.alt=img.alt;
+      lightbox.classList.add("is-open");
+    });
+  });
+  lightbox.addEventListener("click",closeLightbox);
+  document.addEventListener("keydown",function(event){if(event.key==="Escape")closeLightbox();});
+})();
+</script>
