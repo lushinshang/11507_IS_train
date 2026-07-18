@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-Hant-TW" xml:lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>中小企業資安學習與輔導資源</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  :root{--ink:#17232d;--muted:#5c6b76;--paper:#fffdf8;--canvas:#eef3f2;--accent:#087f7c;--accent-dark:#075b60;--accent-soft:#e5f3f0;--amber:#ef9d3c;--line:#d8e3e1;--shadow:0 18px 55px rgba(31,58,59,.09)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#e8f1ef 0,#f4f6f4 420px);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.76;letter-spacing:0}.site-nav{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.92);border-bottom:1px solid rgba(216,227,225,.9);backdrop-filter:blur(14px)}.site-nav__inner{max-width:1120px;height:58px;margin:auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}.site-brand{font-size:.92rem;font-weight:800;color:var(--accent-dark);text-decoration:none;white-space:nowrap}.site-links{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}.site-links a{padding:7px 11px;border-radius:999px;color:var(--muted);font-size:.8rem;text-decoration:none;white-space:nowrap}.site-links a:hover{background:var(--accent-soft);color:var(--accent-dark)}main{max-width:1120px;margin:32px auto 56px;background:var(--paper);min-height:100vh;padding:72px clamp(24px,7vw,112px) 84px;border:1px solid rgba(216,227,225,.85);border-radius:24px;box-shadow:var(--shadow)}header{max-width:760px;margin:0 auto 42px;padding-bottom:32px;border-bottom:1px solid var(--line)}h1{font-size:clamp(2.25rem,5vw,3.55rem);line-height:1.15;letter-spacing:-.035em;margin:0 0 28px;text-wrap:balance;color:#102e39}main>h1:first-child:before{content:"115 年中小企業基礎資安培訓｜Day 1";display:block;margin-bottom:18px;color:var(--accent);font-size:.8rem;letter-spacing:.1em;font-weight:800}h2{max-width:760px;margin:66px auto 22px;font-size:clamp(1.5rem,3vw,2.1rem);line-height:1.3;letter-spacing:-.022em;color:#103f4a;text-wrap:balance;scroll-margin-top:76px}h3{max-width:760px;margin:42px auto 14px;font-size:1.22rem;line-height:1.4;color:#17616a;scroll-margin-top:76px}p,ul,ol,blockquote,table,hr{max-width:760px;margin-left:auto;margin-right:auto}p{margin-top:0;margin-bottom:21px}strong{color:#0b5860}blockquote{margin-top:30px;margin-bottom:34px;padding:19px 23px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 12px 12px 0;color:#294a50}ul,ol{padding-left:1.55em;margin-top:0;margin-bottom:26px}li{padding-left:.25em;margin:8px 0}table{width:100%;border-collapse:separate;border-spacing:0;margin-top:30px;margin-bottom:32px;font-size:.93em;overflow:hidden;border:1px solid var(--line);border-radius:13px}th,td{padding:13px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}th:last-child,td:last-child{border-right:0}th{background:#e7f2f1;color:#124f59;font-weight:800}tr:last-child td{border-bottom:0}a{color:#067078;text-decoration-color:#8abec0;text-underline-offset:3px}hr{border:0;border-top:1px solid var(--line);margin-top:60px;margin-bottom:38px}code{background:#edf3f2;padding:.1em .35em;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em}.article-footer{max-width:760px;margin:56px auto 0;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:.88rem}.article-footer a{text-decoration:none;font-weight:700}.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:12px;top:12px;z-index:100;background:#fff;padding:8px 12px;border-radius:8px}.mermaid-frame{max-width:760px;margin:34px auto;overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:22px 20px;-webkit-overflow-scrolling:touch}.mermaid-frame svg{display:block;margin:0 auto;max-width:100%;height:auto}.mermaid-caption{max-width:760px;margin:-24px auto 34px;font-size:.85rem;color:var(--muted);text-align:center}.mermaid-frame--mobile{display:none}.mermaid-frame--desktop{display:block}@media(max-width:760px){body{font-size:16px;background:var(--paper)}.site-nav__inner{padding:0 15px}.site-brand{font-size:.82rem}.site-links a{font-size:.75rem;padding:6px 8px}main{margin:0;border:0;border-radius:0;box-shadow:none;padding:44px 21px 62px}header{margin-bottom:30px;padding-bottom:24px}h2{margin-top:50px}table{display:block;overflow-x:auto;font-size:.82em}th,td{min-width:130px;padding:10px 9px}.mermaid-frame{margin:26px auto;padding:14px 12px}.mermaid-caption{margin:-18px auto 26px}.mermaid-frame--desktop{display:none}.mermaid-frame--mobile{display:block}}
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">跳至主要內容</a>
+<nav class="site-nav" aria-label="Day1 課程導覽">
+  <div class="site-nav__inner">
+    <a class="site-brand" href="index.html">Day1 深度導讀</a>
+    <div class="site-links">
+      <a href="01_資安事件應變與防禦縱深_深度導讀.html">事件應變</a>
+      <a href="02_中小企業資安學習與輔導資源_深度導讀.html">學習資源</a>
+      <a href="03_不用熱血抗資安_AI與資安治理實務_深度導讀.html">AI 治理</a>
+      <a href="04_惡意程式攻防演示與網路分段_深度導讀.html">攻防實作</a>
+    </div>
+  </div>
+</nav>
+<main id="main-content">
+<h1
+id="資安不是一次上完課中小企業如何從自學健檢走到專家輔導">資安不是一次上完課：中小企業如何從自學、健檢走到專家輔導</h1>
+<blockquote>
+<p><strong>課程定位</strong>：Day1
+資源導覽短講，由主辦單位代表介紹中小企業可使用的教材、自我檢查工具、客服與一對一專家諮詢。</p>
+</blockquote>
+<p>很多中小企業並不是不想做資安，而是卡在一個更前面的問題：資料太多、術語太硬、預算有限，而且不知道第一步應該做什麼。</p>
+<p>有人下載了一份厚厚的指引，翻兩頁就放回資料夾；有人做完檢核表，發現每一項都需要改善，反而更不知道怎麼排序；也有人直接找廠商買設備，最後才發現真正的問題是共用帳號、備份無法還原，或外包合約根本沒有約定事件責任。</p>
+<p>這段課程提供的不是另一張「必買清單」，而是一條漸進路徑：<strong>先用低門檻教材建立共同語言，再用工具看見自己的缺口，最後把企業特有的難題帶去和專家討論。</strong></p>
+<h2 id="摘要">摘要</h2>
+<blockquote>
+<p>本篇整理主辦單位介紹的資源導覽，核心是一條三層路徑：先用「資安心裡有術」等低門檻教材建立共同語言，再用基本防護指引與決策迷宮做自我檢查，最後把公司特有的難題帶進快速提問或專家會客室諮詢。文章也整理了檢核表的正確用法（排序而非成績單）、諮詢前該準備的五樣資料、以及用「資安衛生」概念維持每月到每年的持續節奏，最後提供一份四週最低門檻的入門版本。</p>
+</blockquote>
+<h2
+id="三層學習路徑知道檢查獲得協助">三層學習路徑：知道、檢查、獲得協助</h2>
+<p>主辦單位把資源分成三類，剛好對應企業資安能力成長的三個階段。</p>
+<h3 id="第一層自我學習">第一層：自我學習</h3>
+<p>目標不是把同仁訓練成資安工程師，而是讓大家能理解帳號被盜、資料外洩、社交工程、委外風險與網路設定為何和日常工作有關。</p>
+<p>這一層解決的是「聽不懂」與「不知道風險在哪裡」。如果主管、IT、採購、財務與一般使用者對資安使用完全不同的語言，制度很難落地。</p>
+<h3 id="第二層應用工具與自我檢查">第二層：應用工具與自我檢查</h3>
+<p>當企業理解基本概念後，下一步是把抽象觀念變成問題：是否仍有離職帳號？密碼是否共用？重要資料放在哪裡？備份能否還原？員工收到可疑訊息時知道找誰？</p>
+<p>這一層解決的是「我知道資安重要，但不知道自己做得怎麼樣」。</p>
+<h3 id="第三層真人諮詢與深度輔導">第三層：真人諮詢與深度輔導</h3>
+<p>當問題涉及公司架構、預算、供應鏈、特定系統或曾發生的事件，通用教材不可能直接給出唯一答案。此時需要把資產、限制與目標帶進諮詢，讓專家協助排序。</p>
+<p>這一層解決的是「每個建議都合理，但哪一個才適合我們」。</p>
+<div class="mermaid-frame mermaid-frame--desktop">
+<svg id="my-svg" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="flowchart" style="max-width: 824px; background-color: transparent;" viewBox="0 0 824 118" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#my-svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#my-svg .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#my-svg .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#my-svg .error-icon{fill:#552222;}#my-svg .error-text{fill:#552222;stroke:#552222;}#my-svg .edge-thickness-normal{stroke-width:1px;}#my-svg .edge-thickness-thick{stroke-width:3.5px;}#my-svg .edge-pattern-solid{stroke-dasharray:0;}#my-svg .edge-thickness-invisible{stroke-width:0;fill:none;}#my-svg .edge-pattern-dashed{stroke-dasharray:3;}#my-svg .edge-pattern-dotted{stroke-dasharray:2;}#my-svg .marker{fill:#333333;stroke:#333333;}#my-svg .marker.cross{stroke:#333333;}#my-svg svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#my-svg p{margin:0;}#my-svg .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#my-svg .cluster-label text{fill:#333;}#my-svg .cluster-label span{color:#333;}#my-svg .cluster-label span p{background-color:transparent;}#my-svg .label text,#my-svg span{fill:#333;color:#333;}#my-svg .node rect,#my-svg .node circle,#my-svg .node ellipse,#my-svg .node polygon,#my-svg .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#my-svg .rough-node .label text,#my-svg .node .label text,#my-svg .image-shape .label,#my-svg .icon-shape .label{text-anchor:middle;}#my-svg .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#my-svg .rough-node .label,#my-svg .node .label,#my-svg .image-shape .label,#my-svg .icon-shape .label{text-align:center;}#my-svg .node.clickable{cursor:pointer;}#my-svg .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#my-svg .arrowheadPath{fill:#333333;}#my-svg .edgePath .path{stroke:#333333;stroke-width:2.0px;}#my-svg .flowchart-link{stroke:#333333;fill:none;}#my-svg .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#my-svg .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#my-svg .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#my-svg .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#my-svg .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#my-svg .cluster text{fill:#333;}#my-svg .cluster span{color:#333;}#my-svg div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#my-svg .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#my-svg rect.text{fill:none;stroke-width:0;}#my-svg .icon-shape,#my-svg .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#my-svg .icon-shape p,#my-svg .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#my-svg .icon-shape rect,#my-svg .image-shape rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#my-svg .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#my-svg .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#my-svg :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}#my-svg .primary&gt;*{fill:#DBEAFE!important;stroke:#1D4ED8!important;color:#172554!important;stroke-width:2px!important;}#my-svg .primary span{fill:#DBEAFE!important;stroke:#1D4ED8!important;color:#172554!important;stroke-width:2px!important;}#my-svg .primary tspan{fill:#172554!important;}#my-svg .warning&gt;*{fill:#FEF3C7!important;stroke:#D97706!important;color:#78350F!important;stroke-width:2px!important;}#my-svg .warning span{fill:#FEF3C7!important;stroke:#D97706!important;color:#78350F!important;stroke-width:2px!important;}#my-svg .warning tspan{fill:#78350F!important;}#my-svg .success&gt;*{fill:#DCFCE7!important;stroke:#15803D!important;color:#14532D!important;stroke-width:2px!important;}#my-svg .success span{fill:#DCFCE7!important;stroke:#15803D!important;color:#14532D!important;stroke-width:2px!important;}#my-svg .success tspan{fill:#14532D!important;}</style><g><marker id="my-svg_flowchart-v2-pointEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-pointStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-crossEnd" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-crossStart" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"/></marker><g class="root"><g class="clusters"/><g class="edgePaths"><path d="M196,59L200.167,59C204.333,59,212.667,59,220.333,59C228,59,235,59,238.5,59L242,59" id="L_a_b_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_a_b_0" data-points="W3sieCI6MTk2LCJ5Ijo1OX0seyJ4IjoyMjEsInkiOjU5fSx7IngiOjI0NiwieSI6NTl9XQ==" marker-end="url(#my-svg_flowchart-v2-pointEnd)"/><path d="M506,59L510.167,59C514.333,59,522.667,59,530.333,59C538,59,545,59,548.5,59L552,59" id="L_b_c_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_b_c_0" data-points="W3sieCI6NTA2LCJ5Ijo1OX0seyJ4Ijo1MzEsInkiOjU5fSx7IngiOjU1NiwieSI6NTl9XQ==" marker-end="url(#my-svg_flowchart-v2-pointEnd)"/></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" data-id="L_a_b_0" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="L_b_c_0" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default primary" id="flowchart-a-0" transform="translate(102, 59)"><rect class="basic label-container" style="fill:#DBEAFE !important;stroke:#1D4ED8 !important;stroke-width:2px !important" x="-94" y="-39" width="188" height="78"/><g class="label" style="color:#172554 !important" transform="translate(-64, -24)"><rect/><foreignObject width="128" height="48"><div style="color: rgb(23, 37, 84) !important; display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span style="color:#172554 !important" class="nodeLabel"><p>第一層：自我學習<br />建立共同語言</p></span></div></foreignObject></g></g><g class="node default warning" id="flowchart-b-1" transform="translate(376, 59)"><rect class="basic label-container" style="fill:#FEF3C7 !important;stroke:#D97706 !important;stroke-width:2px !important" x="-130" y="-51" width="260" height="102"/><g class="label" style="color:#78350F !important" transform="translate(-100, -36)"><rect/><foreignObject width="200" height="72"><div style="color: rgb(120, 53, 15) !important; display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span style="color:#78350F !important" class="nodeLabel"><p>第二層：應用工具與自我檢查<br />看見自己的缺口</p></span></div></foreignObject></g></g><g class="node default success" id="flowchart-c-3" transform="translate(686, 59)"><rect class="basic label-container" style="fill:#DCFCE7 !important;stroke:#15803D !important;stroke-width:2px !important" x="-130" y="-51" width="260" height="102"/><g class="label" style="color:#14532D !important" transform="translate(-100, -36)"><rect/><foreignObject width="200" height="72"><div style="color: rgb(20, 83, 45) !important; display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span style="color:#14532D !important" class="nodeLabel"><p>第三層：真人諮詢與深度輔導<br />把難題帶去和專家討論</p></span></div></foreignObject></g></g></g></g></g></svg>
+</div>
+<div class="mermaid-frame mermaid-frame--mobile">
+<svg id="my-svg" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="flowchart" style="max-width: 276px; background-color: transparent;" viewBox="0 0 276 398" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#my-svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#my-svg .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#my-svg .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#my-svg .error-icon{fill:#552222;}#my-svg .error-text{fill:#552222;stroke:#552222;}#my-svg .edge-thickness-normal{stroke-width:1px;}#my-svg .edge-thickness-thick{stroke-width:3.5px;}#my-svg .edge-pattern-solid{stroke-dasharray:0;}#my-svg .edge-thickness-invisible{stroke-width:0;fill:none;}#my-svg .edge-pattern-dashed{stroke-dasharray:3;}#my-svg .edge-pattern-dotted{stroke-dasharray:2;}#my-svg .marker{fill:#333333;stroke:#333333;}#my-svg .marker.cross{stroke:#333333;}#my-svg svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#my-svg p{margin:0;}#my-svg .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#my-svg .cluster-label text{fill:#333;}#my-svg .cluster-label span{color:#333;}#my-svg .cluster-label span p{background-color:transparent;}#my-svg .label text,#my-svg span{fill:#333;color:#333;}#my-svg .node rect,#my-svg .node circle,#my-svg .node ellipse,#my-svg .node polygon,#my-svg .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#my-svg .rough-node .label text,#my-svg .node .label text,#my-svg .image-shape .label,#my-svg .icon-shape .label{text-anchor:middle;}#my-svg .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#my-svg .rough-node .label,#my-svg .node .label,#my-svg .image-shape .label,#my-svg .icon-shape .label{text-align:center;}#my-svg .node.clickable{cursor:pointer;}#my-svg .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#my-svg .arrowheadPath{fill:#333333;}#my-svg .edgePath .path{stroke:#333333;stroke-width:2.0px;}#my-svg .flowchart-link{stroke:#333333;fill:none;}#my-svg .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#my-svg .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#my-svg .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#my-svg .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#my-svg .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#my-svg .cluster text{fill:#333;}#my-svg .cluster span{color:#333;}#my-svg div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#my-svg .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#my-svg rect.text{fill:none;stroke-width:0;}#my-svg .icon-shape,#my-svg .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#my-svg .icon-shape p,#my-svg .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#my-svg .icon-shape rect,#my-svg .image-shape rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#my-svg .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#my-svg .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#my-svg :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}#my-svg .primary&gt;*{fill:#DBEAFE!important;stroke:#1D4ED8!important;color:#172554!important;stroke-width:2px!important;}#my-svg .primary span{fill:#DBEAFE!important;stroke:#1D4ED8!important;color:#172554!important;stroke-width:2px!important;}#my-svg .primary tspan{fill:#172554!important;}#my-svg .warning&gt;*{fill:#FEF3C7!important;stroke:#D97706!important;color:#78350F!important;stroke-width:2px!important;}#my-svg .warning span{fill:#FEF3C7!important;stroke:#D97706!important;color:#78350F!important;stroke-width:2px!important;}#my-svg .warning tspan{fill:#78350F!important;}#my-svg .success&gt;*{fill:#DCFCE7!important;stroke:#15803D!important;color:#14532D!important;stroke-width:2px!important;}#my-svg .success span{fill:#DCFCE7!important;stroke:#15803D!important;color:#14532D!important;stroke-width:2px!important;}#my-svg .success tspan{fill:#14532D!important;}</style><g><marker id="my-svg_flowchart-v2-pointEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-pointStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-crossEnd" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-crossStart" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"/></marker><g class="root"><g class="clusters"/><g class="edgePaths"><path d="M138,86L138,90.167C138,94.333,138,102.667,138,110.333C138,118,138,125,138,128.5L138,132" id="L_a_b_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_a_b_0" data-points="W3sieCI6MTM4LCJ5Ijo4Nn0seyJ4IjoxMzgsInkiOjExMX0seyJ4IjoxMzgsInkiOjEzNn1d" marker-end="url(#my-svg_flowchart-v2-pointEnd)"/><path d="M138,238L138,242.167C138,246.333,138,254.667,138,262.333C138,270,138,277,138,280.5L138,284" id="L_b_c_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_b_c_0" data-points="W3sieCI6MTM4LCJ5IjoyMzh9LHsieCI6MTM4LCJ5IjoyNjN9LHsieCI6MTM4LCJ5IjoyODh9XQ==" marker-end="url(#my-svg_flowchart-v2-pointEnd)"/></g><g class="edgeLabels"><g class="edgeLabel"><g class="label" data-id="L_a_b_0" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel"><g class="label" data-id="L_b_c_0" transform="translate(0, 0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default primary" id="flowchart-a-0" transform="translate(138, 47)"><rect class="basic label-container" style="fill:#DBEAFE !important;stroke:#1D4ED8 !important;stroke-width:2px !important" x="-94" y="-39" width="188" height="78"/><g class="label" style="color:#172554 !important" transform="translate(-64, -24)"><rect/><foreignObject width="128" height="48"><div style="color: rgb(23, 37, 84) !important; display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;" xmlns="http://www.w3.org/1999/xhtml"><span style="color:#172554 !important" class="nodeLabel"><p>第一層：自我學習<br />建立共同語言</p></span></div></foreignObject></g></g><g class="node default warning" id="flowchart-b-1" transform="translate(138, 187)"><rect class="basic label-container" style="fill:#FEF3C7 !important;stroke:#D97706 !important;stroke-width:2px !important" x="-130" y="-51" width="260" height="102"/><g class="label" style="color:#78350F !important" transform="translate(-100, -36)"><rect/><foreignObject width="200" height="72"><div style="color: rgb(120, 53, 15) !important; display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span style="color:#78350F !important" class="nodeLabel"><p>第二層：應用工具與自我檢查<br />看見自己的缺口</p></span></div></foreignObject></g></g><g class="node default success" id="flowchart-c-3" transform="translate(138, 339)"><rect class="basic label-container" style="fill:#DCFCE7 !important;stroke:#15803D !important;stroke-width:2px !important" x="-130" y="-51" width="260" height="102"/><g class="label" style="color:#14532D !important" transform="translate(-100, -36)"><rect/><foreignObject width="200" height="72"><div style="color: rgb(20, 83, 45) !important; display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;" xmlns="http://www.w3.org/1999/xhtml"><span style="color:#14532D !important" class="nodeLabel"><p>第三層：真人諮詢與深度輔導<br />把難題帶去和專家討論</p></span></div></foreignObject></g></g></g></g></g></svg>
+</div>
+<p class="mermaid-caption">圖：三層學習路徑，從建立共同語言、自我檢查缺口，到把企業特有難題帶去諮詢。</p>
+
+<h2
+id="資安心裡有術不是從術語開始而是從企業情境開始">「資安心裡有術」：不是從術語開始，而是從企業情境開始</h2>
+<p>課程介紹由國家資通安全研究院編寫的「資安心裡有術」系列。它的設計重點，是讓沒有資訊或資安背景的人也能閱讀。與其先丟出一大串標準與縮寫，系列手冊透過案例、故事與名詞解釋，把風險放回日常決策。</p>
+<p>逐字稿提到的選讀方向包括：</p>
+<table>
+<thead>
+<tr>
+<th>冊別／主題</th>
+<th>適合的讀者問題</th>
+<th>可以帶回公司的行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>航程導引</td>
+<td>五本都重要，我該先讀哪一本？</td>
+<td>依角色與公司需求排出閱讀順序</td>
+</tr>
+<tr>
+<td>資安基礎概論</td>
+<td>資料外洩、帳號被盜與社交工程到底如何發生？</td>
+<td>建立全員共同的基本語言</td>
+</tr>
+<tr>
+<td>資通系統安全委外</td>
+<td>網站、ERP 或會員系統交給廠商後，資安是誰的責任？</td>
+<td>從需求、契約到驗收加入資安條件</td>
+</tr>
+<tr>
+<td>網路安全設定</td>
+<td>Wi-Fi、防火牆、電子郵件與密碼可以先改善什麼？</td>
+<td>盤點最常見、最貼近日常的設定問題</td>
+</tr>
+<tr>
+<td>資安制度全攻略</td>
+<td>做過一次改善後，如何持續下去？</td>
+<td>建立角色、週期、紀錄與檢討機制</td>
+</tr>
+</tbody>
+</table>
+<p>若公司只能先讀一本，基礎概論適合建立共識；若正準備委外開發，應優先看委外主題；若已經知道問題卻每年重演，制度與持續維運就更重要。</p>
+<p>教材的真正用法不是「丟連結給同仁」。可以把每次內部會議聚焦在一個情境，例如離職帳號、釣魚信或廠商遠端維護，讀完相關段落後直接對照公司現況，產出一項改善工作。</p>
+<h2
+id="影音課程適合複習但要把觀看轉成任務">影音課程適合複習，但要把觀看轉成任務</h2>
+<p>主辦單位說明，過往課程與本次 Day1、Day2 直播會保留在
+YouTube，方便學員回看或分享給企業夥伴。這解決了現場資訊量過大、來不及抄筆記的問題。</p>
+<p>不過「看過影片」不等於「組織具備能力」。比較有效的使用方法是把影片切成任務：</p>
+<ul>
+<li>看完帳號管理段落，列出公司目前所有管理者帳號。</li>
+<li>看完備份段落，實際抽一份備份做還原測試。</li>
+<li>看完事件應變段落，確認緊急聯絡人是否仍有效。</li>
+<li>看完委外風險段落，檢查現有合約是否有通報與蒐證責任。</li>
+</ul>
+<p>學習成果要能在公司的清冊、設定、紀錄或演練中看見，否則只會停在個人印象。</p>
+<h2
+id="基本資安防護指引先確認三個基本面">基本資安防護指引：先確認三個基本面</h2>
+<p>課程介紹的中小企業基本資安防護指引，聚焦三大面向：帳戶管理、設備與資料管理、資安意識培育。這三類看似基礎，卻涵蓋多數企業最常見的起點。</p>
+<h3 id="帳戶管理">帳戶管理</h3>
+<p>企業要知道誰有帳號、誰有管理權限、離職或調職後如何處理、共用帳號如何追查，以及重要服務是否只靠一組密碼。帳號管理若失控，再昂貴的設備也很難判斷「現在操作的人究竟是誰」。</p>
+<h3 id="設備與資料管理">設備與資料管理</h3>
+<p>需要盤點電腦、伺服器、手機、雲端服務、網路設備與重要資料。更新、備份、加密與存取權限都要有負責人。重點不是追求完美清單，而是先知道核心業務依賴哪些東西。</p>
+<h3 id="資安意識培育">資安意識培育</h3>
+<p>員工要知道哪些行為有風險，以及發現疑慮時該向誰反映。若宣導只剩「不要亂點」，同仁碰到主管假冒信、臨時付款要求或陌生雲端分享時，仍然不知道如何判斷。</p>
+<h2
+id="資安自檢決策迷宮把規定變成看得見的後果">資安自檢決策迷宮：把規定變成看得見的後果</h2>
+<p>逐字稿示範了企業版決策迷宮：密碼是否貼在鍵盤附近、是否把密碼存進瀏覽器、是否把帳密寫在便條紙交給
+IT、是否只用帳號密碼登入，以及看到「老闆」要求建立 LINE
+群組時會不會立刻照辦。</p>
+<p>這類工具的優點，是把枯燥的規定換成情境選擇。員工不只知道答案是「不可以」，還能理解後果：</p>
+<ul>
+<li>密碼留在實體環境，任何靠近設備的人都可能取得。</li>
+<li>把帳密交給 IT，讓責任與稽核軌跡變得模糊。</li>
+<li>只有密碼，一旦遭釣魚就缺少第二層防護。</li>
+<li>即時通訊裡的主管身分可能是假冒，急迫要求正是常見話術。</li>
+</ul>
+<p>主辦單位另提供家庭版與青少年版，顯示資安教育不是只在公司發生。家庭帳號、社群平台與行動裝置一旦失守，也可能回頭影響工作帳號。</p>
+<h2
+id="檢核表不是成績單而是排序工具">檢核表不是成績單，而是排序工具</h2>
+<p>第一次做自評時，出現大量缺口很正常。最危險的反應有兩種：一是為了好看而全部勾「已完成」；二是看到問題太多，乾脆全部不做。</p>
+<p>比較務實的方式，是把每個缺口加上三個欄位：</p>
+<ol type="1">
+<li><strong>業務影響</strong>：不改善會影響多少客戶、資料與營運？</li>
+<li><strong>可利用程度</strong>：是否對外、是否已有攻擊、是否容易被濫用？</li>
+<li><strong>改善成本</strong>：一週內可完成、需要跨部門，還是需要預算？</li>
+</ol>
+<p>先處理高影響、容易被利用、又能快速改善的項目。這樣檢核表才是行動排序，而不是合規成績。</p>
+<h2
+id="快速提問與深度諮詢是兩種不同服務">快速提問與深度諮詢，是兩種不同服務</h2>
+<p>課程介紹兩種協助管道。</p>
+<p>第一種是透過資安署與經濟部中小及新創企業署相關服務管道，處理帳號管理、資產防護、釣魚與事件預防等較明確的問題。這適合快速釐清做法或尋找資源。</p>
+<p>第二種是「中小企業資安專家會客室」，讓企業和專家進行較深入的一對一討論。依課程背景資訊，2026
+年服務期間為 8 至 10 月，當時仍有名額。逐字稿列出的諮詢主題包括：</p>
+<ul>
+<li>勒索軟體防護與復原。</li>
+<li>企業機密資料保護。</li>
+<li>資安管理與制度建立。</li>
+</ul>
+<p>預約流程不是填完表單就立即得到標準答案。主辦單位會先檢視問題，必要時請企業補充資訊，再依議題媒合專家，透過線上或適合的實體方式討論，最後形成可行動的備忘錄。</p>
+<p>課程背景提供的預約連結為：<a
+href="https://forms.gle/3asPEqmpQzDJvK8X6">中小企業資安專家會客室預約表單</a>。名額與服務狀態仍以主辦單位最新公告為準。</p>
+<h2
+id="諮詢前準備五樣資料才能把時間用在刀口上">諮詢前準備五樣資料，才能把時間用在刀口上</h2>
+<p>如果只帶著一句「我們想把資安做好」，專家還得先花大量時間理解公司。諮詢前可先準備：</p>
+<ol type="1">
+<li><strong>核心業務</strong>：哪些服務停擺會立即影響收入或客戶？</li>
+<li><strong>資產與資料</strong>：重要系統、雲端服務、帳號與資料放在哪裡？</li>
+<li><strong>目前控制</strong>：備份、MFA、端點防護、委外維護做到什麼程度？</li>
+<li><strong>已知問題</strong>：曾發生哪些釣魚、病毒、帳號或設定事件？</li>
+<li><strong>現實限制</strong>：人力、預算、舊系統與不能停機的時段是什麼？</li>
+</ol>
+<p>這些資料不需要一開始就完美。即使是一頁簡表，也能讓專家快速從「通用衛教」進入「公司怎麼做」。</p>
+<h2
+id="資安衛生真正有用的是持續的小循環">資安衛生：真正有用的是持續的小循環</h2>
+<p>課程用 Cyber
+Hygiene，也就是資安衛生，說明資安和健康管理相似：一次上課、一次健檢或買一套產品，都不能保證永遠安全。攻擊方式會變、員工會異動、系統會更新，供應商也會更換。</p>
+<p>可持續的企業節奏可以很簡單：</p>
+<table>
+<thead>
+<tr>
+<th>週期</th>
+<th>建議行動</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每月</td>
+<td>檢查管理者帳號、重要告警與備份結果</td>
+</tr>
+<tr>
+<td>每季</td>
+<td>更新資產清冊、抽測復原、檢視廠商權限</td>
+</tr>
+<tr>
+<td>每半年</td>
+<td>做一次貼近公司情境的事件演練</td>
+</tr>
+<tr>
+<td>每年</td>
+<td>重新排序重大風險、預算與委外責任</td>
+</tr>
+</tbody>
+</table>
+<p>資安能力不是一次跳到滿分，而是每一輪都比上一輪多看見一個問題、多關一個不必要入口、多驗證一次復原能力。</p>
+<blockquote>
+<p><strong>🖼️ 資訊圖表建議（AI 產圖
+prompt，尚未產圖，先放文字佔位）</strong></p>
+<p>Prompt：「Flat vector circular cycle diagram with four segments
+arranged clockwise, Traditional Chinese labels：
+'每月：帳號與備份檢查'， '每季：資產清冊與復原抽測'，
+'每半年：情境式事件演練'， '每年：風險與預算重排序'。 Center icon: a
+simple heartbeat/pulse symbol representing 'Cyber Hygiene 資安衛生'。
+Teal and amber palette, rounded segments, mobile-readable label size,
+1:1 or 4:3 aspect ratio.」</p>
+<p>用途：呼應「資安衛生像健康管理」的比喻，讓讀者一眼看懂這是持續循環而非一次性專案。</p>
+</blockquote>
+<h2
+id="一家公司如何開始四週最低門檻版本">一家公司如何開始：四週最低門檻版本</h2>
+<p><strong>第一週：建立共同語言。</strong>
+選一份基礎教材與一段影音，讓主管、IT
+與一位業務代表共同閱讀，列出最擔心的三種情境。</p>
+<p><strong>第二週：完成小範圍自檢。</strong>
+只檢查管理者帳號、核心資料與備份，不追求一次做完整家公司。</p>
+<p><strong>第三週：完成一項改善。</strong>
+例如停用離職帳號、替重要服務加上 MFA，或成功還原一份備份。</p>
+<p><strong>第四週：決定是否需要外部協助。</strong>
+若卡在舊系統、供應商責任、勒索復原或制度建立，就把現況整理成問題，帶去快速諮詢或專家會客室。</p>
+<p>這條路徑的核心不是「把教材全部看完」，而是讓每一份資源都對應到下一個實際行動。</p>
+<h2 id="結論">結論</h2>
+<p>中小企業資安不需要一次到位，也不需要獨自摸索。從低門檻教材建立共識、用自我檢查看見缺口，到把特有難題帶去諮詢，是一條可以分階段完成的路徑；而資安衛生的持續節奏，讓這條路徑不會在完成一次改善後就停下來。</p>
+<p>真正的行動門檻不是「有沒有時間看完所有資源」，而是「這次讀完、這次諮詢完，公司多做了哪一件事」。</p>
+<hr />
+<h2 id="來源與閱讀說明">來源與閱讀說明</h2>
+<ul>
+<li>課程影片：<a
+href="https://www.youtube.com/watch?v=HaGctbSN7Dw">115年中小企業基礎資安培訓課程｜第二期
+Day1</a></li>
+<li>完整逐字稿：<a href="https://hackmd.io/@lanss/r1r_aowEGx">HackMD
+課程逐字稿</a></li>
+<li>課程背景提供：<a
+href="https://forms.gle/3asPEqmpQzDJvK8X6">中小企業資安專家會客室預約表單</a></li>
+</ul>
+<p>本文依課程逐字稿整理資源用途與導入方式；服務期間、名額與申請條件請以主辦單位最新公告為準。</p>
+</main>
+<footer class="article-footer">
+  <span>115 年中小企業基礎資安培訓課程｜第二期 Day1</span>
+  <a href="index.html">返回 Day1 課程目錄 →</a>
+</footer>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>115年中小企業基礎資安培訓課程｜第二期 Day1 深度導讀</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+  :root{--ink:#17212b;--muted:#5a6978;--paper:#fffdf8;--canvas:#f2f5f6;--accent:#087e8b;--accent-soft:#e4f3f2;--line:#dce4e8;--code:#eef3f4}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--canvas);color:var(--ink);font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;font-size:17px;line-height:1.76;letter-spacing:0}main{max-width:1120px;margin:0 auto;background:var(--paper);min-height:100vh;padding:68px clamp(24px,7vw,112px) 84px;box-shadow:0 0 40px rgba(32,51,64,.06)}header{max-width:760px;margin:0 auto 42px;padding-bottom:32px;border-bottom:1px solid var(--line)}h1{font-size:clamp(2.25rem,5vw,3.55rem);line-height:1.17;letter-spacing:-.03em;margin:0 0 26px;text-wrap:balance;color:#102c3a}h1:before{content:"資安深度導讀";display:block;margin-bottom:18px;color:var(--accent);font-size:.82rem;letter-spacing:.12em;font-weight:700}h2{max-width:760px;margin:64px auto 21px;font-size:clamp(1.48rem,3vw,2.08rem);line-height:1.3;letter-spacing:-.02em;color:#103849;text-wrap:balance}h3{max-width:760px;margin:42px auto 14px;font-size:1.23rem;line-height:1.4;color:#15596a}p,ul,ol,blockquote,table,hr{max-width:760px;margin-left:auto;margin-right:auto}p{margin-top:0;margin-bottom:20px}strong{color:#0c5362}blockquote{margin-top:30px;margin-bottom:32px;padding:18px 22px;border-left:4px solid var(--accent);background:var(--accent-soft);border-radius:0 12px 12px 0;color:#244451}ul,ol{padding-left:1.55em;margin-top:0;margin-bottom:24px}li{padding-left:.25em;margin:8px 0}table{width:100%;border-collapse:collapse;margin-top:28px;margin-bottom:30px;font-size:.94em;display:table;overflow:hidden;border:1px solid var(--line);border-radius:12px}th,td{padding:13px 15px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#eaf4f5;color:#124f60;font-weight:700}tr:last-child td{border-bottom:0}a{color:#066d7c;text-decoration-color:#90bec3;text-underline-offset:3px}hr{border:0;border-top:1px solid var(--line);margin-top:58px;margin-bottom:36px}code{background:var(--code);padding:.1em .35em;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em}@media (max-width:640px){body{font-size:16px}main{padding:42px 22px 64px;box-shadow:none}header{margin-bottom:30px;padding-bottom:24px}h2{margin-top:48px}table{font-size:.82em}th,td{padding:10px 9px}}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">115年中小企業基礎資安培訓課程｜第二期 Day1
+深度導讀</h1>
+</header>
+<h1
+id="當資安事件不再罕見中小企業如何把被駭變成可控的營運風險">當資安事件不再罕見：中小企業如何把「被駭」變成可控的營運風險</h1>
+<blockquote>
+<p>以「115年中小企業基礎資安培訓課程｜第二期
+Day1」逐字稿為基礎整理。本文保留課程的核心觀念與實務脈絡，將口語內容重組為可供企業主管、IT／MIS
+與資安兼任人員共同閱讀的導讀。</p>
+</blockquote>
+<p>資安最棘手的時刻，通常不是螢幕跳出勒索訊息的那一秒，而是更早之前：攻擊者已經進到環境裡，新增帳號、試探服務、橫向移動，組織卻還以為一切正常。等到系統真的停擺，大家才開始問：「防毒不是有裝嗎？防火牆不是有買嗎？」</p>
+<p>這正是本課程最值得帶走的一個觀念：<strong>資安不是保證永遠不出事；它是一套讓組織及早看見、縮小影響、保留證據並恢復營運的能力。</strong>
+對資源有限的中小企業來說，這比追逐每一項新產品更實際，也更重要。</p>
+<h2
+id="真正的第一道防線是識別而不是修復">真正的第一道防線，是「識別」而不是「修復」</h2>
+<p>講師把資安事件比喻為生病：如果不知道自己生病，就不會看醫生；如果公司不知道自己已遭入侵，也就不會啟動任何處置。這聽起來直白，卻點出了許多企業的盲點。早期惡意程式常以惡作劇或炫技為主，感染後會刻意讓使用者看見異狀；現在多數攻擊以獲利或竊取價值為目的，反而傾向潛伏。</p>
+<p>因此，組織要問的不是「我們會不會被攻擊」，而是「當異常剛開始出現時，我們看不看得出來」。例如：</p>
+<ul>
+<li>某台伺服器突然建立不在既定流程中的帳號。</li>
+<li>網頁伺服器開始對原本不該接觸的內部主機連線。</li>
+<li>例行不使用的遠端管理、檔案分享或上傳功能被啟用。</li>
+<li>備份、日誌或端點上出現與平日不同的行為軌跡。</li>
+</ul>
+<p>這些訊號未必直接證明遭駭，卻值得被看見、被保留、被判讀。年度一次的帳號盤點，無法捕捉攻擊者在十分鐘內建立又刪除的帳號；相對地，對新帳號、新服務、新檔案或高權限連線建立主動告警，才是把「事後知道」往「當下發現」前移的做法。</p>
+<h2
+id="漏洞永遠補不完但暴露面可以持續縮小">漏洞永遠補不完，但暴露面可以持續縮小</h2>
+<p>課程談到 CVE、CVSS
+與零時差漏洞時，重點並不在要求每家企業都追完所有技術公告。CVE
+可以協助辨認特定軟體是否有已知弱點；CVSS
+則提供嚴重度的共同語言。但分數不是唯一答案：同一個弱點在不同系統、網路位置、權限配置與業務情境下，風險可能完全不同。</p>
+<p>真正可落地的問題是：這個系統有沒有對外？能不能被利用？一旦出事，會不會影響核心業務？</p>
+<p>零時差漏洞尤其提醒我們，修補並非永遠來得及。面對尚無修補程式或無法立即更新的情境，企業仍可透過備份、網路分段、權限最小化、異常監控與可演練的復原方案降低損害。它們不會讓零時差消失，卻能避免「一個缺口等於整間公司失守」。</p>
+<p>另一個常被忽略的原則是：<strong>不需要的服務，就是不需要承擔的風險。</strong>
+檔案分享、遠端維護、測試網頁、過期帳號、長時間開放的防火牆規則，都應納入盤點。尤其高權限的遠端存取，不宜因為「廠商需要維護」就長期開放一大片來源範圍；較好的作法是限制對象、時間與用途，並留下紀錄。</p>
+<h2
+id="防禦縱深不是堆城牆而是讓攻擊走得慢走得難走得有痕跡">防禦縱深不是堆城牆，而是讓攻擊走得慢、走得難、走得有痕跡</h2>
+<p>不少企業把縱深防禦理解成在入口前堆更多設備：防火牆後面再接防火牆，設備越多好像越安全。課程用城堡的比喻指出問題：一條筆直通到底的走廊，沿途即使有許多關卡，也不是真正的縱深。</p>
+<p>真正的縱深，是讓攻擊者每往前一步都必須面對不同限制，並留下可被察覺的痕跡。實務上可轉換成幾個方向：</p>
+<ol type="1">
+<li><strong>區隔路徑。</strong>
+對外服務區、一般辦公網路、伺服器區與身分驗證核心，不應彼此任意直通。主機對主機的連線若需要跨區，應經過可管控的位置。</li>
+<li><strong>分層驗證。</strong>
+一般服務的登入機制，不能自動等同於高風險系統的通行證。應依資產價值與業務衝擊，在重要區域加上不同或更強的驗證。</li>
+<li><strong>最小權限與白名單。</strong>
+開哪些服務、誰能存取、何時能存取，都要能回答。比起大範圍的「全部允許」，明確定義必要項目更容易管理。</li>
+<li><strong>保留觀測點。</strong>
+在不影響正常營運的前提下，誘捕帳號、欺敵環境或蜜罐等設計，可把不應出現的探索行為變成高價值告警。</li>
+</ol>
+<p>這些安排的目的不只是「擋住」。更重要的是用空間換時間：讓攻擊者從外部服務進到內部核心時，必須跨越更多關卡，使應變團隊有機會確認範圍、切換服務、保存證據與做出決策。</p>
+<h2
+id="備份不是按下還原鍵而是一次復原能力的考試">備份不是按下還原鍵，而是一次復原能力的考試</h2>
+<p>「先把網路線拔掉，再把備份倒回去」是事件壓力下很自然的直覺，但課程提醒，這種做法可能同時失去兩樣珍貴的東西：現場證據，以及對攻擊範圍的理解。</p>
+<p>若攻擊者已潛伏數週，近期每一版備份都可能已帶有同樣的問題。此時不論怎麼切換災害復原站點，或怎麼還原備份，都可能把感染重新帶回環境。因此，RTO（可接受的復原時間）與
+RPO（可接受的資料復原點）不只是 IT
+指標；它們要和攻擊潛伏期、核心資料、備份版本隔離與驗證流程一起思考。</p>
+<p>較成熟的做法，是在維持營運、隔離受影響範圍與蒐證之間取得平衡。例如切換到可用的備援環境後，保留原始環境供授權人員檢視；在復原前，根據已知的攻擊特徵檢查備份；並預先決定哪些系統優先恢復。這不是要求中小企業建立昂貴的雙機房，而是要求企業先知道：哪一個服務停一小時最痛、哪些資料遺失最不能接受、誰有權決定切換。</p>
+<h2 id="事件應變不是-mis-一個人的戰爭">事件應變不是 MIS
+一個人的戰爭</h2>
+<p>資安事件發生時，技術處置固然重要，但「誰決定、誰溝通、誰留證、誰對外回應」往往更決定後續代價。課程提出
+CSIRT（電腦資安事件應變團隊）的概念：它至少要串起管理決策、IT／MIS、資安應變、法務與鑑識等角色。規模較小的企業不一定能一一設置專職人員，仍應事先指定兼任角色與外部支援窗口。</p>
+<p>一個可操作的事件流程，可以用下面的節奏理解：</p>
+<table>
+<thead>
+<tr>
+<th>階段</th>
+<th>要解決的問題</th>
+<th>組織應留下的產物</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>識別與分級</td>
+<td>這是不是事件？影響哪些服務與資料？</td>
+<td>時間線、受影響資產、初步嚴重度</td>
+</tr>
+<tr>
+<td>檢傷與收斂</td>
+<td>哪些警訊屬於同一波攻擊？最早的跡象在哪？</td>
+<td>事件側寫、優先處理清單</td>
+</tr>
+<tr>
+<td>遏止與蒐證</td>
+<td>如何限制擴散，又不破壞必要證據？</td>
+<td>處置紀錄、日誌與影像保存</td>
+</tr>
+<tr>
+<td>根因與復原</td>
+<td>攻擊從哪裡進來？備份是否乾淨？</td>
+<td>根因分析、復原決策與驗證結果</td>
+</tr>
+<tr>
+<td>改善與演練</td>
+<td>下次如何更早發現、更快處理？</td>
+<td>改善項目、告警規則、演練紀錄</td>
+</tr>
+</tbody>
+</table>
+<p>課程特別強調 IOC（入侵指標）與
+IOA（攻擊指標）。前者偏向已知的可疑檔案、網域、帳號或設定；後者更關心攻擊行為本身，例如異常建立帳號、可疑的橫向連線、短時間的大量權限變更。兩者整理後放進日誌與監控流程，才能讓事件處理不只是一回合的救火，而是讓下次更快辨識。</p>
+<h2
+id="從資產盤點開始風險不是感覺而是可以討論的排序">從資產盤點開始：風險不是感覺，而是可以討論的排序</h2>
+<p>「每一個系統都很重要」往往是資安推不動的起點。若沒有排序，預算、人力與注意力就會平均稀釋，最後真正重要的資產反而沒有被保護。</p>
+<p>課程建議從資訊資產盤點與分級開始，結合機密性、完整性、可用性（CIA）與營運衝擊分析（BIA），回答以下問題：</p>
+<ul>
+<li>哪些系統支撐核心營收、金流、製造或對客戶的承諾？</li>
+<li>哪些資料一旦外洩、被竄改或無法使用，損害最大？</li>
+<li>哪些帳號、憑證、AD／單一登入或憑證管理元件一旦失守，會成為整體控制權的跳板？</li>
+<li>自帶設備、USB、外包商遠端連線與雲端服務，有沒有被納入同一份清冊？</li>
+</ul>
+<p>盤點不只是為了填 ISO
+文件。它會直接決定備份什麼、哪些服務需要更強驗證、哪些異常必須立即告警，以及事件發生時先救誰。更進一步說，資產價值不只由公司自己定義，也包含攻擊者眼中的利用價值：一個不顯眼的介接帳號、舊系統或外部供應鏈帳號，可能比看起來重要的網站更適合被拿來當跳板。</p>
+<h2
+id="資安治理的關鍵是把成本換成可理解的風險選擇">資安治理的關鍵，是把成本換成可理解的風險選擇</h2>
+<p>中小企業常見的困境是：資安人員提出需求，主管只看見花費，卻看不見沒有做的後果。課程提出一個很務實的界線：處置成本不應失去比例，也不能把資安當成無限制採購清單。</p>
+<p>好的資安溝通不是說「一定要買」，而是清楚交代「不做會承擔什麼風險、做了能降低哪一段損害、還有哪些風險仍會存在」。把風險、決策與接受的殘餘風險記錄在管理審查中，讓資安責任回到管理層共同承擔，而不是由一位兼任
+IT 人員默默背負。</p>
+<p>這也解釋了 IT 與資安的差異。IT
+的目標通常是讓使用者能順利工作；資安則必須在便利、成本與風險之間設定界線。兩者都不可少，但不能假設「很會修電腦」就等於具備事件應變、風險評估與證據保全能力。若同一個人兼任，更要藉由明確的決策流程與外部支援，避免平日的服務壓力吞沒資安工作。</p>
+<h2 id="ai-可以是助手但不能成為不經查證的決策者">AI
+可以是助手，但不能成為不經查證的決策者</h2>
+<p>課程後段把 AI
+放回一個務實位置：它可以協助把高品質指引轉為檢核表、協助起草演練情境、處理第一線常見問題，甚至成為內部知識入口。但這些價值建立在兩個前提上。</p>
+<p>第一，輸入資料要有依據。企業若要建立內部資安助理，應以已核准的政策、作業程序、可信賴的公開指引與經整理的服務紀錄為知識來源，而不是把未驗證內容直接丟給模型。第二，輸出必須有人覆核。AI
+可能迎合提問者、遺漏情境或產生看似合理但不正確的敘述；高風險的技術、法務、個資與事件處置決策，仍應交由具權責的人確認。</p>
+<p>同時，導入 AI 本身也會擴大資料流與存取面。使用外部模型、API
+或代理程式前，企業要先確認資料分級、可否上傳、帳號權限、日誌與供應商條件。對研發機密、財務、人資或核心系統，不應把「方便」直接等同於「可以使用」。</p>
+<h2
+id="給中小企業的第一個九十天先讓自己看得見動得起來">給中小企業的第一個九十天：先讓自己看得見、動得起來</h2>
+<p>課程並沒有把答案包裝成一套昂貴設備，而是指向可逐步建立的基本功。若企業正要開始，可以把前九十天聚焦在以下節奏：</p>
+<p><strong>前 30 天：知道自己有什麼。</strong>
+建立資產、帳號、對外服務、遠端連線、重要資料與備份的清冊；標出核心業務與不可中斷服務；關閉或收斂不必要的服務與過度寬鬆的規則。</p>
+<p><strong>第 31～60 天：讓重要異常被看見。</strong>
+為高權限帳號、新帳號、新服務、關鍵系統間的異常連線與重要日誌建立可追查機制；檢視備份是否可還原、是否有版本隔離，以及誰可以存取。</p>
+<p><strong>第 61～90 天：把「遇到怎麼辦」真的走一次。</strong>
+指定事件聯絡鏈與決策權責，挑一個貼近公司情境的腳本，例如可疑帳號、釣魚信、網站異常上傳或勒索軟體疑慮，完成一次桌上推演，再逐步走向技術驗證。演練後留下待改善事項與期限。</p>
+<p>最後要記得，成熟度不是宣稱「我們絕不會中毒」，而是能在事件後有憑據地說明：我們看見了什麼、做了哪些處置、影響範圍在哪裡、接下來怎麼避免重演。當這些問題都有答案，資安才從令人疲憊的口號，變成企業能持續經營的韌性。</p>
+<hr />
+<h2 id="名詞速查">名詞速查</h2>
+<ul>
+<li><strong>CVE</strong>：公開揭露的資安弱點識別編號。</li>
+<li><strong>CVSS</strong>：用於評估弱點嚴重程度的評分框架；仍須搭配企業自身情境判讀。</li>
+<li><strong>AD</strong>：Active
+Directory，常用於集中管理使用者、電腦與權限的身分服務。</li>
+<li><strong>DMZ</strong>：對外服務與內部網路之間的隔離區域。</li>
+<li><strong>RTO／RPO</strong>：分別代表可接受的復原時間，以及可接受的資料復原點。</li>
+<li><strong>CSIRT／IR</strong>：電腦資安事件應變團隊／資安事件應變。</li>
+<li><strong>IOC／IOA</strong>：入侵指標／攻擊行為指標。</li>
+<li><strong>BIA／CIA</strong>：營運衝擊分析／機密性、完整性、可用性。</li>
+</ul>
+<h2 id="來源與閱讀範圍">來源與閱讀範圍</h2>
+<ul>
+<li>課程影片：<a
+href="https://www.youtube.com/watch?v=HaGctbSN7Dw">115年中小企業基礎資安培訓課程｜第二期
+Day1</a>（2026 年 7 月 17 日直播）。</li>
+<li>逐字稿：<a href="https://hackmd.io/@lanss/r1r_aowEGx">HackMD
+課程逐字稿</a>。</li>
+</ul>
+<p>本文為導讀與學習整理，不構成資安事件處置、法律或合規意見。實際事件應依組織情境與專業人員建議處理。</p>
+</body>
+</html>
