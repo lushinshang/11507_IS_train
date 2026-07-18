@@ -17,6 +17,7 @@ for source_md in "$script_dir"/0[1-4]_*.md; do
     --standalone \
     --metadata lang=zh-Hant-TW \
     --metadata pagetitle="$page_title" \
+    --metadata document-css=false \
     --include-in-header="$script_dir/deepguide_style.html" \
     --include-before-body="$script_dir/article_nav.html" \
     --include-after-body="$script_dir/article_footer.html" \

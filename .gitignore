@@ -1,3 +1,4 @@
 .claude/
 _tooling/
 .DS_Store
+.playwright-mcp/
